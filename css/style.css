@@ -1,0 +1,208 @@
+/* styles.css */
+
+/* Customize navbar background color */
+.navbar {
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+/* Change background on scroll */
+.navbar.scrolled {
+  background-color: #f8f9fa !important;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Add padding to navbar content on desktop screens */
+@media (min-width: 992px) {
+  .navbar .container-fluid {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+/* Custom Spacing Class */
+.section-spacing {
+  padding-top: 9rem; /* Increased top padding */
+  padding-bottom: 9rem; /* Increased bottom padding */
+}
+
+/* Optional: Responsive Spacing */
+@media (max-width: 576px) {
+  .section-spacing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Carousel Full-Screen Styling */
+#landingCarousel {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-content {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Adjust navbar to overlay on carousel */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: #f8f9fa !important;
+}
+
+/* Adjust content under navbar */
+body {
+  margin-top: 0;
+}
+
+/* About Section Styling */
+#about h6 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#about img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Section Styling */
+#event h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#event p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#event img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#countdown {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#countdown h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+#countdown small {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 576px) {
+  #countdown .d-flex {
+    flex-direction: column;
+  }
+
+  #countdown div {
+    margin-bottom: 15px;
+  }
+}
+
+/* Speakers Section Styling */
+#speakers h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#speakers p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.speaker-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.speaker-card:hover {
+  transform: translateY(-10px);
+}
+
+.speaker-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.speaker-card h5 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.speaker-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.speaker-card a:hover {
+  text-decoration: underline;
+}
