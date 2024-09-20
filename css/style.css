@@ -14,17 +14,20 @@
 /* Navbar brand styling */
 .navbar-brand {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 5.5rem;
+  font-family: "Oswald", sans-serif;
 }
 
 /* Navbar link styling */
 .navbar-nav .nav-link {
   margin-right: 1rem;
   transition: color 0.3s;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #007bff;
+  color: #a8120d;
 }
 
 /* Add padding to navbar content on desktop screens */
@@ -69,6 +72,7 @@
   object-fit: cover;
   width: 100%;
   height: 100vh;
+  z-index: 1; /* Images are behind the text */
 }
 
 .carousel-caption {
@@ -77,21 +81,43 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2; /* Caption is above the images */
 }
 
+/* Carousel Content Styling */
 .carousel-content {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Optional background for better readability */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* padding: 20px; */
+  /* border-radius: 10px; */
 }
 
-/* Adjust navbar to overlay on carousel */
-.navbar {
-  background-color: transparent;
-  transition: background-color 0.3s;
+/* Subheading Styling */
+.carousel-content .subheading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem; /* Adjust as needed */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
-.navbar.scrolled {
-  background-color: #f8f9fa !important;
+/* Main Heading Styling */
+.carousel-content h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 4rem; /* Increase font size for larger heading */
+  /* margin-bottom: 1rem; */
+}
+
+/* Paragraph Styling */
+.carousel-content p {
+  font-size: 1.25rem;
+}
+
+/* Adjust content under navbar */
+body {
+  margin-top: 0;
 }
 
 /* Adjust content under navbar */
@@ -100,40 +126,163 @@ body {
 }
 
 /* About Section Styling */
-#about h6 {
-  font-size: 1rem;
-  letter-spacing: 2px;
+/* About Section */
+#about {
+  padding: 0 0 0 0; /* Remove bottom padding */
+  overflow: hidden; /* Prevent margin collapsing */
+}
+
+/* Remove bottom margin from the last child */
+#about .about-container > *:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Vertically center items */
+}
+
+#about .about-heading {
+  background-color: #a8120d;
+  color: #fff;
+  padding: 20px;
+  flex: 1 1 100%;
+}
+
+#about .about-content {
+  padding: 10px;
+  flex: 1 1 100%;
+}
+
+@media (min-width: 992px) {
+  #about .about-container {
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+  }
+
+  #about .about-heading {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 380px; /* Fixed height for red box */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  #about .about-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 50px;
+  }
+
+  #about .about-content p {
+    margin: 0;
+    text-align: center; /* Center text */
+  }
 }
 
 #about h2 {
-  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 4.5rem;
   font-weight: 700;
+  margin: 0;
 }
 
 #about p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 600px; /* Set a max-width for better readability */
 }
 
-#about img {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@media (max-width: 991.98px) {
+  #about .about-content {
+    text-align: center;
+  }
 }
 
 /* Event Section Styling */
-#event h2 {
+.event-section {
+  background-image: url("path-to-your-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  position: relative;
+}
+
+/* Event Header Box */
+.event-header-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.event-header-box h2 {
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
+  color: #000;
 }
 
-#event p {
-  font-size: 1.1rem;
+/* Event Section Styling */
+.event-section {
+  background-image: url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  position: relative;
+  min-height: 500px; /* Ensure the section has height */
+}
+
+/* Event Header Box */
+.event-header-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  max-width: 350px; /* Set max-width to 350px */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.event-header-box h2 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #a8120d;
+  font-family: "Oswald", sans-serif;
+}
+.event-header-box h6 {
+  margin: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  font-family: "Anton", sans-serif;
+}
+
+/* Event Content Box */
+.event-content-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  max-width: 350px; /* Set max-width to 350px */
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+}
+
+.event-content-box p {
+  margin: 0 0 20px 0;
+  font-size: 1rem;
   line-height: 1.6;
+  color: #000;
 }
 
-#event img {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+/* Countdown Styling */
 #countdown {
   background-color: #fff;
   padding: 20px;
@@ -158,6 +307,41 @@ body {
 
   #countdown div {
     margin-bottom: 15px;
+  }
+}
+
+/* View Agenda Button */
+.btn-agenda {
+  display: inline-block;
+  background-color: #a8120d;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-agenda:hover {
+  background-color: #8e0f0b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+  .event-header-box,
+  .event-content-box {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .event-header-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-content-box p {
+    font-size: 0.9rem;
   }
 }
 
@@ -205,4 +389,110 @@ body {
 
 .speaker-card a:hover {
   text-decoration: underline;
+}
+
+/* Schedule Section Styling */
+#schedule .schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Images on Each Side */
+.schedule-image {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.schedule-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .schedule-image {
+    flex: 0 0 15%;
+    max-width: 15%;
+    margin-bottom: 0;
+  }
+
+  .schedule-content {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+
+/* Day Buttons */
+.day-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.day-buttons .btn-day {
+  background-color: #a8120d;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.day-buttons .btn-day.active,
+.day-buttons .btn-day:hover {
+  background-color: #8e0f0b;
+}
+
+/* Schedule Details */
+.schedule-details {
+  margin-top: 20px;
+}
+
+.day-schedule {
+  display: block;
+}
+
+.day-schedule.d-none {
+  display: none;
+}
+
+/* Time Slots */
+.time-slot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.time-slot .time {
+  flex: 0 0 20%;
+  max-width: 20%;
+  font-weight: bold;
+}
+
+.time-slot .description {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.time-slot + hr {
+  border: 0;
+  border-top: 1px dotted #a8120d;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .time-slot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time-slot .time,
+  .time-slot .description {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
