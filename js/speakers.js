@@ -3,10 +3,10 @@
 // Array of speaker objects
 const speakersList = [
   {
-    name: "Dr. Jane Smith",
-    image: "https://via.placeholder.com/120",
-    channel: "Archaeology Insights",
-    link: "https://www.example.com/jane-smith",
+    name: "Fredrik Trusohamn",
+    image: "https://diggingupancientaliens.com/img/headshot.webp",
+    channel: "Digging Up Ancient Aliens",
+    link: "https://diggingupancientaliens.com/",
   },
   {
     name: "Prof. John Doe",

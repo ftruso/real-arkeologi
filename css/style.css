@@ -347,8 +347,9 @@ body {
 
 /* Speakers Section Styling */
 #speakers h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 #speakers p {
@@ -383,7 +384,7 @@ body {
 }
 
 .speaker-card a {
-  color: #007bff;
+  color: #a8120d;
   text-decoration: none;
 }
 
@@ -391,42 +392,56 @@ body {
   text-decoration: underline;
 }
 
-/* Schedule Section Styling */
+/* Section Header Styling */
+#schedule .section-header {
+  background-color: #a8120d; /* Red background */
+  color: #fff; /* White text */
+  padding: 40px 0; /* Vertical padding */
+  text-align: center;
+}
+
+#schedule .section-header h2 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+/* Schedule Section */
+#schedule {
+  padding: 0 0 60px 0; /* Remove top padding, keep bottom padding */
+}
+
 #schedule .schedule-container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  padding: 40px 0; /* Add vertical padding */
 }
 
-/* Images on Each Side */
-.schedule-image {
+#schedule .schedule-content {
   flex: 1 1 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.schedule-image img {
   max-width: 100%;
-  height: auto;
+  padding: 0 20px; /* Horizontal padding */
 }
 
 @media (min-width: 992px) {
-  .schedule-image {
-    flex: 0 0 15%;
-    max-width: 15%;
-    margin-bottom: 0;
+  #schedule .schedule-image {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 
-  .schedule-content {
-    flex: 0 0 70%;
-    max-width: 70%;
+  #schedule .schedule-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 20px;
   }
 }
 
 /* Day Buttons */
 .day-buttons {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increase bottom margin */
 }
 
 .day-buttons .btn-day {
@@ -434,15 +449,11 @@ body {
   color: #fff;
   border: none;
   margin: 5px;
-  padding: 10px 15px;
+  padding: 12px 20px; /* Increase padding */
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
-}
-
-.day-buttons .btn-day.active,
-.day-buttons .btn-day:hover {
-  background-color: #8e0f0b;
+  font-size: 1rem; /* Increase font size */
 }
 
 /* Schedule Details */
@@ -450,31 +461,25 @@ body {
   margin-top: 20px;
 }
 
-.day-schedule {
-  display: block;
-}
-
-.day-schedule.d-none {
-  display: none;
-}
-
-/* Time Slots */
 .time-slot {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 10px 0;
+  align-items: flex-start;
+  padding: 15px 0; /* Increase vertical padding */
 }
 
 .time-slot .time {
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 25%; /* Increase time width */
+  max-width: 25%;
   font-weight: bold;
+  font-size: 1.1rem; /* Increase font size */
 }
 
 .time-slot .description {
-  flex: 0 0 80%;
-  max-width: 80%;
+  flex: 0 0 75%; /* Adjust description width */
+  max-width: 75%;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .time-slot + hr {
@@ -483,7 +488,10 @@ body {
   margin: 0;
 }
 
-/* Responsive Adjustments */
+.schedule-details hr {
+  margin: 0; /* Ensure no extra margin */
+}
+
 @media (max-width: 768px) {
   .time-slot {
     flex-direction: column;
@@ -494,5 +502,32 @@ body {
   .time-slot .description {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+}
+
+/* Images on Each Side */
+.schedule-image {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.schedule-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .schedule-image {
+    flex: 0 0 20%; /* Adjust as needed */
+    max-width: 20%;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .schedule-content {
+    flex: 0 0 60%;
+    max-width: 60%;
   }
 }

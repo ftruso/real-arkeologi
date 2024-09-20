@@ -56,3 +56,203 @@
     </div>
   </div>
 </section>
+
+<!-- Time Slots -->
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<hr />
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<hr />
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<hr />
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<hr />
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<hr />
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<hr />
+<div class="time-slot">
+  <div class="time">09:00 AM</div>
+  <div class="description">Opening Remarks</div>
+</div>
+<!-- Repeat time slots -->
+<!-- Add up to 7 time slots per day -->
+
+
+<!-- Day 3 Schedule -->
+  <!-- Time Slots for Day 3 -->
+  <div class="day-schedule" id="day3">
+    <!-- Time Slots -->
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+  </div>
+</div>
+<!-- Day 4 Schedule -->
+  <!-- Time Slots for Day 4 -->
+  <div class="day-schedule" id="day4">
+    <!-- Time Slots -->
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+  </div>
+</div>
+<!-- Day 5 Schedule -->
+  <!-- Time Slots for Day 5 -->
+  <div class="day-schedule" id="day5">
+    <!-- Time Slots -->
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+  </div>
+</div>
+<!-- Day 6 Schedule -->
+  <!-- Time Slots for Day 6 -->
+  <div class="day-schedule" id="day6">
+    <!-- Time Slots -->
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+    <hr />
+    <div class="time-slot">
+      <div class="time">09:00 AM</div>
+      <div class="description">Opening Remarks</div>
+    </div>
+  </div>
+</div>
